@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://renu2renew.us/sitemap.xml
+Sitemap: https://renu2renew.online/sitemap.xml
