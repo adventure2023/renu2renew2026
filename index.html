@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Renu Malhotra for Newark Unified School Board 2026</title>
+<meta name="description" content="Renu Malhotra for Newark Unified School District Board of Education, 2026. Educator, technologist, and community leader.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Figtree:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FAF6EE;
+    --bg-warm:#F0E9DA;
+    --card:#FFFFFF;
+    --ink:#1E2430;
+    --teal:#1B3A6B;
+    --teal-deep:#122647;
+    --marigold:#D9A21B;
+    --coral:#C6472F;
+    --line:#D9CFBC;
+    --maxw:1120px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto;}
+    *{animation:none!important;transition:none!important;}
+  }
+  body{
+    margin:0;background:var(--bg);color:var(--ink);
+    font-family:'Figtree',sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{font-family:'Fraunces',serif;color:var(--teal-deep);line-height:1.12;margin:0 0 .5em;font-weight:600;}
+  .eyebrow{
+    font-family:'Caveat',cursive;font-size:1.3rem;color:var(--coral);
+    display:block;margin-bottom:.2em;font-weight:700;transform:rotate(-1.5deg);
+  }
+  a{color:var(--teal);}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+
+  /* ---------- NAV ---------- */
+  header{position:sticky;top:0;z-index:50;background:var(--bg);border-bottom:2px solid var(--line);}
+  .navwrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:70px;}
+  .brand{font-family:'Fraunces',serif;color:var(--teal-deep);font-size:1.3rem;text-decoration:none;font-weight:600;}
+  .brand span{color:var(--coral);font-family:'Caveat',cursive;font-size:1.15rem;font-weight:700;}
+  nav.links{display:flex;gap:2px;align-items:center;}
+  nav.links a{color:var(--ink);text-decoration:none;font-size:.96rem;padding:24px 14px;position:relative;font-weight:600;white-space:nowrap;}
+  nav.links a.active,nav.links a:hover{color:var(--teal-deep);}
+  nav.links a.active::after{content:"";position:absolute;left:14px;right:14px;bottom:14px;height:3px;background:var(--marigold);border-radius:3px;}
+  .navcta{background:var(--coral);color:#fff!important;border-radius:20px;padding:9px 20px!important;font-weight:700!important;margin-left:8px;}
+  .hamburger{display:none;background:none;border:0;cursor:pointer;padding:8px;}
+  .hamburger span{display:block;width:22px;height:2px;background:var(--ink);margin:5px 0;}
+  @media (max-width:860px){
+    nav.links{display:none;position:absolute;top:70px;left:0;right:0;background:var(--bg);flex-direction:column;align-items:stretch;padding:8px 0 16px;border-top:2px solid var(--line);}
+    nav.links.open{display:flex;}
+    nav.links a{padding:14px 24px;}
+    nav.links a.active::after{display:none;}
+    nav.links a.active{background:var(--bg-warm);}
+    .hamburger{display:block;}
+    .navcta{margin:8px 24px 0;text-align:center;}
+  }
+
+  section{padding:88px 0;border-bottom:2px dashed var(--line);}
+  section.alt{background:var(--bg-warm);}
+  section:last-of-type{border-bottom:none;}
+  .section-head{max-width:640px;margin-bottom:48px;}
+  .section-head p{font-size:1.08rem;color:#4A5262;margin:0;}
+
+  .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease;}
+  .reveal.in{opacity:1;transform:none;}
+
+  /* pin / tape decorations */
+  .pin{position:relative;}
+  .pin::before{
+    content:"";position:absolute;top:-9px;left:50%;transform:translateX(-50%);
+    width:16px;height:16px;border-radius:50%;background:var(--coral);
+    box-shadow:0 2px 4px rgba(0,0,0,.25);z-index:2;
+  }
+  .tape{position:relative;}
+  .tape::after{
+    content:"";position:absolute;top:-10px;left:20px;width:60px;height:22px;
+    background:rgba(217,162,27,.55);transform:rotate(-3deg);z-index:2;
+  }
+
+  /* ---------- HERO ---------- */
+  #home{padding:56px 0 72px;border-bottom:none;}
+  .hero-inner{display:grid;grid-template-columns:1fr 1.05fr;gap:48px;align-items:center;}
+  .hero-text .eyebrow{font-size:1.5rem;}
+  .hero-text h1{font-size:clamp(2.3rem,4.4vw,3.5rem);margin-bottom:.3em;}
+  .hero-text h1 em{color:var(--coral);font-style:italic;}
+  .hero-text .tagline{font-size:1.15rem;color:#4A5262;max-width:38ch;margin-bottom:2em;}
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;font-size:.98rem;padding:14px 26px;border-radius:26px;transition:transform .15s ease,background .15s ease;}
+  .btn-primary{background:var(--coral);color:#fff;}
+  .btn-primary:hover{background:#A93A24;transform:translateY(-1px);}
+  .btn-ghost{border:2px solid var(--teal);color:var(--teal-deep);}
+  .btn-ghost:hover{background:var(--teal);color:#fff;}
+  .hero-words{
+    position:relative;background:var(--card);border-radius:12px;
+    padding:34px 34px 30px;border:2px solid var(--line);
+    box-shadow:0 14px 32px rgba(18,38,71,.12);transform:rotate(.6deg);
+  }
+  .hero-words::before{
+    content:"";position:absolute;top:-12px;left:50%;transform:translateX(-50%);
+    width:20px;height:20px;border-radius:50%;background:var(--marigold);
+    box-shadow:0 2px 4px rgba(0,0,0,.25);z-index:2;
+  }
+  .hero-words .eyebrow{font-size:1.35rem;margin-bottom:.5em;}
+  .hero-portrait{
+    float:left;width:200px;height:auto;margin:4px 24px 12px 0;
+    border-radius:8px;border:6px solid #fff;
+    box-shadow:0 10px 24px rgba(18,38,71,.18);
+    transform:rotate(-1.5deg);shape-outside:margin-box;
+  }
+  .hero-words p{margin:0 0 1em;font-size:.97rem;line-height:1.68;color:#333B4A;}
+  .hero-words p:last-child{margin-bottom:0;font-weight:500;color:var(--teal-deep);}
+  @media (max-width:860px){
+    .hero-inner{grid-template-columns:1fr;align-items:start;}
+    .hero-words{transform:rotate(0);padding:26px 22px 24px;}
+    .hero-portrait{float:none;display:block;margin:0 auto 20px;transform:rotate(0);}
+  }
+
+  /* ---------- BIO ---------- */
+  .bio-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}
+  .bio-tile{
+    background:var(--card);border-radius:12px;padding:38px 36px;
+    border:2px solid var(--line);box-shadow:0 8px 22px rgba(18,38,71,.08);
+    transform:rotate(-.6deg);
+  }
+  .bio-tile .bio-lead{
+    margin:0 0 .8em;font-family:'Fraunces',serif;font-size:1.32rem;line-height:1.45;
+    color:var(--teal-deep);
+  }
+  .bio-tile p{margin:0 0 1em;font-size:.97rem;line-height:1.68;color:#333B4A;}
+  .bio-tile p:last-child{margin-bottom:0;}
+  .bio-photos img{
+    width:100%;border-radius:8px;aspect-ratio:4/3;object-fit:cover;
+    border:6px solid #fff;box-shadow:0 8px 20px rgba(18,38,71,.14);transform:rotate(-1.5deg);
+  }
+  @media (max-width:860px){
+    .bio-grid{grid-template-columns:1fr;gap:28px;}
+    .bio-tile{transform:rotate(0);padding:28px 24px;}
+    .bio-tile .bio-lead{font-size:1.15rem;}
+    .bio-photos img{transform:rotate(0);}
+  }
+
+  /* ---------- TRACK RECORD: pinned notecards ---------- */
+  .card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+  .note-card{
+    background:var(--card);border-radius:10px;padding:26px 22px 22px;
+    box-shadow:0 8px 20px rgba(18,38,71,.1);position:relative;
+  }
+  .note-card:nth-child(3n+1){transform:rotate(-1.2deg);}
+  .note-card:nth-child(3n+2){transform:rotate(0.8deg);}
+  .note-card:nth-child(3n+3){transform:rotate(-0.6deg);}
+  .note-card h3{font-size:1.2rem;margin-bottom:.15em;}
+  .note-card .org{font-family:'Caveat',cursive;font-size:1.1rem;color:var(--teal);font-weight:700;margin-bottom:10px;display:block;}
+  .note-card p{margin:0 0 10px;font-size:.94rem;}
+  .note-card .badge{
+    display:inline-block;font-size:.78rem;font-weight:700;color:var(--teal-deep);
+    background:#E4EAF4;padding:5px 12px;border-radius:14px;
+  }
+  @media (max-width:860px){.card-grid{grid-template-columns:1fr;}.note-card{transform:none!important;}}
+  .passion-photos{display:flex;gap:16px;flex-wrap:wrap;margin-top:36px;}
+  .passion-photos img{width:calc(33.333% - 11px);border-radius:8px;object-fit:cover;aspect-ratio:4/3;border:6px solid #fff;box-shadow:0 8px 20px rgba(18,38,71,.14);}
+  @media (max-width:700px){.passion-photos img{width:100%;}}
+
+  /* ---------- ENDORSEMENTS ---------- */
+  .endorse-photos{display:flex;gap:18px;flex-wrap:wrap;margin-top:30px;}
+  .endorse-photos img,.endorse-photos video{width:calc(25% - 14px);border-radius:8px;object-fit:cover;border:6px solid #fff;box-shadow:0 8px 20px rgba(18,38,71,.14);}
+  .endorse-photos > *:nth-child(odd){transform:rotate(-1.5deg);}
+  .endorse-photos > *:nth-child(even){transform:rotate(1.5deg);}
+  @media (max-width:860px){
+    .endorse-photos img{width:calc(50% - 9px);}
+  }
+
+  /* ---------- CONNECT ---------- */
+  .connect-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
+  .connect-card{background:var(--card);border-radius:10px;padding:24px;display:flex;flex-direction:column;gap:8px;box-shadow:0 6px 18px rgba(18,38,71,.08);}
+  .connect-card .eyebrow{margin-bottom:0;font-size:1.15rem;}
+  .connect-card a{font-weight:700;text-decoration:none;font-size:1.02rem;color:var(--teal-deep);}
+  .connect-card a:hover{color:var(--coral);}
+  .podcast-player{width:100%;margin-top:4px;}
+  .player-note{font-family:'Caveat',cursive;font-size:1rem;color:var(--coral);font-weight:700;}
+  .connect-icon{
+    width:46px;height:46px;border-radius:50%;background:#E4EAF4;
+    display:flex;align-items:center;justify-content:center;margin-bottom:6px;
+  }
+  .connect-icon svg{width:23px;height:23px;}
+  .connect-card .blurb{margin:auto 0 0;padding-top:10px;font-size:.9rem;color:#4A5262;}
+
+  /* ---------- EVENTS ---------- */
+  .events{margin-top:44px;}
+  .events-head{display:flex;align-items:center;gap:14px;margin-bottom:6px;}
+  .events-head .connect-icon{margin-bottom:0;flex:0 0 auto;}
+  .events-head .eyebrow{margin-bottom:0;line-height:1.1;}
+  .events-head h3{margin:0;font-size:1.5rem;}
+  .events-intro{font-size:1.06rem;line-height:1.55;color:#333B4A;max-width:60ch;margin:0 0 22px;}
+  .event-list{display:flex;flex-direction:column;gap:14px;}
+  .event{
+    background:var(--card);border-radius:10px;padding:18px 22px;
+    display:flex;align-items:center;gap:20px;
+    box-shadow:0 6px 18px rgba(18,38,71,.08);border-left:5px solid var(--marigold);
+  }
+  .event.virtual{border-left-color:var(--teal);}
+  .event-date{
+    flex:0 0 92px;text-align:center;line-height:1.15;
+    border-right:2px dashed var(--line);padding-right:16px;
+  }
+  .event-date .dow{font-family:'Caveat',cursive;font-size:1.05rem;color:var(--coral);font-weight:700;display:block;}
+  .event-date .dnum{font-family:'Fraunces',serif;font-size:1.6rem;color:var(--teal-deep);font-weight:600;display:block;}
+  .event-date .mon{font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:#4A5262;display:block;}
+  .event-body{flex:1;min-width:0;}
+  .event-body h3{font-size:1.08rem;margin:0 0 3px;}
+  .event-body p{margin:0;font-size:.92rem;color:#4A5262;}
+  .event-tag{
+    display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.05em;
+    text-transform:uppercase;padding:4px 10px;border-radius:12px;margin-bottom:6px;
+    background:#FAEEDA;color:#854F0B;
+  }
+  .event.virtual .event-tag{background:#E4EAF4;color:#122647;}
+  .event-link{flex:0 0 auto;font-size:.86rem;color:#4A5262;font-style:italic;white-space:nowrap;}
+  @media (max-width:700px){
+    .event{flex-wrap:wrap;gap:14px;padding:16px 18px;}
+    .event-date{flex:0 0 auto;text-align:left;border-right:0;border-bottom:2px dashed var(--line);
+      padding:0 0 10px;width:100%;display:flex;align-items:baseline;gap:8px;}
+    .event-date .dnum{font-size:1.25rem;}
+    .event-link{flex:1 0 100%;white-space:normal;}
+  }
+  @media (max-width:700px){
+    .connect-grid{grid-template-columns:1fr;}
+  }
+
+  /* Videos keep their own shape - portrait clips are not cropped to 16:9 */
+  .endorse-photos video{
+    width:auto;height:420px;max-width:100%;object-fit:contain;
+    background:var(--teal-deep);align-self:flex-start;
+    border-radius:8px;border:6px solid #fff;box-shadow:0 8px 20px rgba(18,38,71,.14);
+  }
+  @media (max-width:700px){
+    .endorse-photos video{width:100%;height:auto;transform:none!important;}
+  }
+
+  footer{background:var(--teal-deep);color:#C9D4E6;padding:36px 0;font-size:.88rem;}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+  footer a{color:#fff;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="navwrap">
+    <a class="brand" href="#home">Renu Malhotra <span>for Newark USD</span></a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="links" id="navlinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#record">Track Record</a>
+      <a href="#endorsements">Endorsements</a>
+      <a href="#connect" class="navcta">Connect</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HOME -->
+<section id="home">
+  <div class="wrap hero-inner">
+    <div class="hero-text">
+      <span class="eyebrow">Newark Unified School District &middot; Board of Education &middot; 2026</span>
+      <h1>Renu Malhotra for <em>Newark USD</em><br>School Board</h1>
+      <p class="tagline">Educator at heart, technologist by trade, and a Newark parent who believes every student deserves a board member who shows up.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#connect">Get Involved</a>
+        <a class="btn btn-ghost" href="#record">See My Track Record</a>
+      </div>
+    </div>
+    <div class="hero-words">
+      <span class="eyebrow">In Renu's own words:</span>
+      <img class="hero-portrait" src="images/renu.jpg" width="284" height="414" alt="Renu Malhotra, candidate for Newark Unified School District Board of Education">
+      <p>For the past 20+ years, Newark has been home to my family. As a mother of two daughters growing up in our community, I have experienced firsthand the hopes every parent has for their children - to receive an excellent education, discover their strengths, and graduate for a bright future.</p>
+      <p>Education transformed my own life. After earning a Bachelor's degree in Computer Science, and an MBA from UC Berkeley, I built a career spanning over three decades leading innovation - from helping shape mobile technologies to currently advancing the safe and responsible use of AI. Along the way, I have learned - great organizations succeed through vision, fiscal responsibility, and continuous improvement.</p>
+      <p>As an eight-armed juggler, I also lead a Girl Scouts troop, direct a Tri-City foreign language program for K-12 students, and serve on the boards of Alameda County Science and Engineering Fair (ACSEF) and American Society of Engineers of Indian Origin (ASEI) - all with an objective of making our communities stronger!</p>
+      <p>I will bring community-focused leadership, responsible stewardship of taxpayer dollars, a commitment to stronger academics, STEM, and the whole-child approach - ensuring every Newark student has the opportunity to thrive.</p>
+      <p>My intent is to listen, lead with integrity, and work to enable our students for a lifetime of success.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="alt reveal">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">a little about me</span>
+      <h2>A technologist who never left the classroom</h2>
+    </div>
+    <div class="bio-grid">
+      <div class="bio-tile">
+        <p class="bio-lead">Two decades in Newark, a career built on solving hard problems, and a life spent showing up for kids.</p>
+        <p>Renu has spent nearly three decades helping shape the tech industry, building products and leading teams at some of the biggest names in software &mdash; from Sun Microsystems and Oracle to IBM and Broadcom &mdash; and today leads AI product strategy for the enterprise. That same discipline in strategic planning, team leadership, and operational excellence is what she brings to community service.</p>
+        <p>She is a recognized industry speaker and advisory board member, invited to share her perspective on responsible AI adoption at conferences and institutions worldwide &mdash; but her most fulfilling work has always been closer to home: a Newark resident of 20 years, raising her own children here, and working to make our world a better place every day.</p>
+      </div>
+      <div class="bio-photos">
+        <img src="images/prof2.jpg" alt="Renu Malhotra speaking at a professional event">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRACK RECORD -->
+<section id="record" class="reveal">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">years of showing up</span>
+      <h2>Already in the neighborhood, already doing the work</h2>
+      <p>On the record&hellip;</p>
+    </div>
+    <div class="card-grid">
+      <div class="note-card pin">
+        <h3>Troop Leader</h3>
+        <span class="org">Girl Scouts</span>
+        <p>Leadership, teamwork &amp; community-responsibility programming for young girls.</p>
+        <span class="badge">Excellence in Volunteering Award</span>
+      </div>
+      <div class="note-card pin">
+        <h3>Robotics Coach</h3>
+        <span class="org">REC Foundation</span>
+        <p>STEM mentorship through hands-on learning &amp; competition.</p>
+        <span class="badge">Hosted NorCal's first regional tournament &mdash; in Newark</span>
+      </div>
+      <div class="note-card pin">
+        <h3>Program Director</h3>
+        <span class="org">Tri-City foreign language program</span>
+        <p>Directs a K&ndash;12 foreign language program serving students across the Tri-City area.</p>
+        <span class="badge">K&ndash;12, Tri-City wide</span>
+      </div>
+      <div class="note-card pin">
+        <h3>Active Parent Partner</h3>
+        <span class="org">Newark schools</span>
+        <p>Facilitated MOEMS &amp; MathCounts access for elementary and middle schoolers.</p>
+        <span class="badge">Strong early foundations in math &amp; problem solving</span>
+      </div>
+      <div class="note-card pin">
+        <h3>Board Member</h3>
+        <span class="org">ACSEF</span>
+        <p>Alameda County Science and Engineering Fair &mdash; county-wide STEM competition for middle and high school students.</p>
+        <span class="badge">County-level STEM governance</span>
+      </div>
+      <div class="note-card pin">
+        <h3>Board Member</h3>
+        <span class="org">ASEI</span>
+        <p>American Society of Engineers of Indian Origin &mdash; professional development &amp; student mentorship.</p>
+        <span class="badge">National professional network</span>
+      </div>
+    </div>
+    <div class="passion-photos">
+      <img src="images/GS3.jpeg" alt="Girl Scouts activity">
+      <img src="images/GS2.jpeg" alt="Girl Scouts event">
+      <img src="images/REC.JPG" alt="REC Foundation event">
+    </div>
+  </div>
+</section>
+
+
+<!-- ENDORSEMENTS -->
+<section id="endorsements" class="reveal">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">the neighborhood speaks</span>
+      <h2>The community's voice</h2>
+      <p>Parents of the students I've coached, teachers, local businesses, HOA leaders, seniors, and neighbors whose lives I've had the privilege to touch.</p>
+    </div>
+    <p>Their support means everything, and their voices are the heart of this campaign. A few of their stories are below.</p>
+    <div class="endorse-photos">
+      <img src="images/Rally1.jpeg" alt="Campaign rally">
+      <img src="images/Rally3.jpeg" alt="Campaign rally">
+      <video controls preload="metadata" poster="images/rally-poster.jpg">
+        <source src="images/Rally_long.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</section>
+
+<!-- CONNECT -->
+<section id="connect" class="alt reveal">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">let's talk</span>
+      <h2>Get to know Renu &mdash; and get involved</h2>
+    </div>
+    <div class="connect-grid">
+      <div class="connect-card">
+        <span class="connect-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="#122647"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zm1.78 13.02H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg></span>
+        <span class="eyebrow">LinkedIn</span>
+        <a href="https://www.linkedin.com/in/renumotwani/" target="_blank" rel="noopener">Connect on LinkedIn &rarr;</a>
+        <p class="blurb">Three decades in technology &mdash; roles, talks, and advisory work.</p>
+      </div>
+      <div class="connect-card">
+        <span class="connect-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#122647" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="11" rx="3"/><path d="M5 10v1a7 7 0 0 0 14 0v-1M12 18v4M8 22h8"/></svg></span>
+        <span class="eyebrow">Podcast</span>
+        <a href="https://southeastbaycommunity.substack.com/p/my-conversation-with-renu-malhotra" target="_blank" rel="noopener">"My Conversation With Renu Malhotra" &rarr;</a>
+        <audio class="podcast-player" controls preload="none">
+          <source src="RenuPodcast.m4a" type="audio/mp4">
+          <source src="RenuPodcast.mp3" type="audio/mpeg">
+          <a href="RenuPodcast.mp3">Download the audio (4 min)</a>
+        </audio>
+        <span class="player-note">Listen here &middot; 4 min</span>
+      </div>
+    </div>
+
+    <div class="events" id="events">
+      <div class="events-head">
+        <span class="connect-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#122647" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 20v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+        <div>
+          <span class="eyebrow">come say hello</span>
+          <h3>Upcoming events</h3>
+        </div>
+      </div>
+      <p class="events-intro">Join for one or more sessions, get to know Renu, share your thoughts, ask questions. Renu is eager to listen and learn.</p>
+      <div class="event-list">
+
+        <div class="event virtual">
+          <div class="event-date">
+            <span class="dow">Tuesday</span>
+            <span class="dnum">15</span>
+            <span class="mon">Sept 2026</span>
+          </div>
+          <div class="event-body">
+            <span class="event-tag">Virtual</span>
+            <h3>Virtual coffee chat</h3>
+            <p>An online meeting &mdash; bring your questions and a cup of something.</p>
+          </div>
+          <span class="event-link">Link coming soon</span>
+        </div>
+
+        <div class="event">
+          <div class="event-date">
+            <span class="dow">Sunday</span>
+            <span class="dnum">27</span>
+            <span class="mon">Sept 2026</span>
+          </div>
+          <div class="event-body">
+            <span class="event-tag">In person</span>
+            <h3>Community gathering in the park</h3>
+            <p>Good food, great company, at a local Newark community park.</p>
+          </div>
+          <span class="event-link">Location coming soon</span>
+        </div>
+
+        <div class="event virtual">
+          <div class="event-date">
+            <span class="dow">Thursday</span>
+            <span class="dnum">8</span>
+            <span class="mon">Oct 2026</span>
+          </div>
+          <div class="event-body">
+            <span class="event-tag">Virtual</span>
+            <h3>Fireside chat</h3>
+            <p>A longer online conversation about schools, priorities, and what you want to see.</p>
+          </div>
+          <span class="event-link">Link coming soon</span>
+        </div>
+
+        <div class="event">
+          <div class="event-date">
+            <span class="dow">Sunday</span>
+            <span class="dnum">18</span>
+            <span class="mon">Oct 2026</span>
+          </div>
+          <div class="event-body">
+            <span class="event-tag">In person</span>
+            <h3>Community gathering in the park</h3>
+            <p>A second chance to meet in person, at a local Newark community park.</p>
+          </div>
+          <span class="event-link">Location coming soon</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 Renu Malhotra for Newark Unified School Board</span>
+    <span>Paid for by Renu Malhotra for Newark USD School Board 2026</span>
+  </div>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navlinks = document.getElementById('navlinks');
+  hamburger.addEventListener('click', () => {
+    const open = navlinks.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', open);
+  });
+  navlinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    navlinks.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', false);
+  }));
+
+  const sections = document.querySelectorAll('section[id]');
+  const navAnchors = document.querySelectorAll('nav.links a[href^="#"]');
+  const setActive = () => {
+    let currentId = sections[0].id;
+    const scrollPos = window.scrollY + 120;
+    sections.forEach(sec => { if (sec.offsetTop <= scrollPos) currentId = sec.id; });
+    navAnchors.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + currentId));
+  };
+  document.addEventListener('scroll', setActive, { passive: true });
+  setActive();
+
+  const revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => io.observe(el));
+  } else {
+    revealEls.forEach(el => el.classList.add('in'));
+  }
+</script>
+
+</body>
+</html>
